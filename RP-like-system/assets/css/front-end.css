@@ -1,0 +1,121 @@
+/*
+* rp Like System Front-end CSS
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.rp-buttons-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#rpAjaxResponse {
+    display: none;
+}
+.rp-btn-container {
+    display: inline-block;
+    width: 48%;
+    margin: 0 1%;
+}
+.rp-btn {
+    display: flex;
+    background: #f8f8f8;
+    text-align: center;
+    text-transform: uppercase;
+    color: #444444;
+    transition: 0.5s all;
+    font-family: "Roboto", serif;
+    position: relative;
+    font-weight: bold;
+}
+.rp-btn-medium {
+    display: inline-block;
+    width: 48%;
+    max-width: 190px;
+    padding: 10px;
+    font-size: 14px;
+    margin: 0 1%;
+    background: #f8f8f8;
+    text-align: left;
+    text-transform: uppercase;
+    color: #444444;
+    transition: 0.5s all;
+    font-family: "Roboto", serif;
+    position: relative;
+    font-weight: bold;
+}
+.rp-btn:hover {
+    text-decoration: none;
+    color: inherit;
+}
+.rp-flat-btn .rp-btn-icon {
+    padding: 20px 30px;
+    font-size: 20px;
+    float: left;
+    height: 100%;
+}
+.rp-flat-btn .rp-btn-label {
+    margin-left: 5px;
+    padding: 20px;
+    font-size: 20px;
+    float: left;
+    height: 100%;
+    text-align: center;
+    flex: 1;
+}
+.rp-btn-medium .rp-btn-icon {
+    padding: 10px;
+}
+.rp-btn-medium .rp-btn-label {
+    margin-left: 35px;
+}
+.rp-flat-btn.rp-like-btn .rp-btn-icon {
+    background: rgb(15, 122, 69);
+}
+.rp-flat-btn.rp-dislike-btn .rp-btn-icon {
+    background-color: #ce504c;
+}
+.rp-like-btn, .rp-dislike-btn {
+    color: #ffffff !important;
+}
+.rp-like-btn {
+    background-color: rgba(45, 143, 88, 0.8);
+}
+.rp-dislike-btn {
+    background-color: rgb(252, 90, 81);
+}
+.rp-like-btn:hover {
+    background-color: rgba(45, 143, 88, 1);
+}
+.rp-dislike-btn:hover {
+    background-color: rgb(224, 77, 69);
+}
+.rp-ajax-response span {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+}
+.rp-count-stats {
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.rp-count-stats p {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.rp-like-count-message {
+    margin: 20px 1% 0 1%;
+    font-size: 22px;
+    text-align: center;
+    width: 98%;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+@media all and (max-width: 768px){
+    .rp-btn-container {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
